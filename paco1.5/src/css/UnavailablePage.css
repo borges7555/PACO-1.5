@@ -8,7 +8,3 @@
     padding: 20px; /* Adiciona um pouco de padding para que o texto não chegue nas bordas */
     box-sizing: border-box; /* Garante que o padding não adicione à largura e altura especificadas */
   }
-
-  body {
-    font-family: 'Roboto', sans-serif;
-  }
