@@ -16,6 +16,7 @@ function Login() {
   return (
     <div className="login-container">
       <form onSubmit={handleLogin} className="login-form">
+        <label><b>Login</b><p></p></label>
         <label>
           Email:
           <input type="email" value={email} onChange={e => setEmail(e.target.value)}/>
