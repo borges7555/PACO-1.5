@@ -1,4 +1,6 @@
-//A IMAGEM NAO APARECE NA PAGINA
+//////////////////////////////////
+//A IMAGEM NAO APARECE NA PAGINA//
+//////////////////////////////////
 
 //import { useState } from 'react';
 import NavBar from '../components/NavBar';
