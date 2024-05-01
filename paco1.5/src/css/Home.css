@@ -1,0 +1,51 @@
+/* Home.css */
+.greetings{
+    padding-top: 150px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    color: #333;
+    font-size: 28px;
+    box-sizing: border-box;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto; /* Mudar de 100vh para auto pode ajudar se o conteúdo estiver sendo cortado */
+    overflow: visible;
+    gap: 30px; /* Mantém o gap entre os containers */
+    padding: 0px 30px; /* Aplica padding apenas horizontalmente */
+    box-sizing: border-box;
+}
+  
+.left-container, .right-container {
+    flex: 1; /* Ambos os containers ocupam espaço igual */
+    border: white;
+    border-radius: 8px;
+    background-color: #333;
+    color: white;
+    font-size: 24px;
+    box-sizing: border-box;
+}     
+  
+.left-container {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+  
+.right-container {
+    /* Estilos adicionais para o container direito se necessário */
+    padding: 30px;
+    display: flex;
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Centraliza a imagem verticalmente */
+}
+  
+.right-container img {
+    max-width: 100%; /* Garante que a imagem não exceda o container */
+    height: auto; /* Mantém a proporção da imagem */
+}
+  
