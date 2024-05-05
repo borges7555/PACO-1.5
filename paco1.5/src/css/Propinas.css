@@ -21,14 +21,13 @@
 }
 
 .left-container, .right-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinha os itens ao centro horizontalmente */
+    justify-content: center; /* Centraliza verticalmente caso haja espaço */
     padding: 20px;
     box-sizing: border-box;
-}
-
-.right-container {
-    display: flex;
-    flex-direction: column; /* Organiza o conteúdo verticalmente */
-    align-items: flex-start; /* Alinha o conteúdo à esquerda */
+    width: 100%;
 }
 
 .left-container h2, .right-container h2{
@@ -36,25 +35,30 @@
     display: flex;
 }
 
-.right-container h2 {
-    margin-left: auto;
-    margin-right: auto;
-    width: auto; /* Ajusta a largura para que o centro seja calculado corretamente */
-    text-align: center; /* Centraliza o texto dentro do h2 */
-}
-
 .left-container ul, .right-container ul{
-    width: 100%;
-    display: flex;
-    flex-direction: column; /* Adiciona isso se você quer os itens listados verticalmente */
-    align-items: flex-start;
+    flex-direction: column;
+    width: 100%; /* Ocupa toda a largura do container */
 }
 
-.left-container ul li, .right-container ul li {
+.left-container li, .right-container li {
     width: 100%; /* Ocupa toda a largura do UL */
-    text-align: left; /* Garante que o texto está alinhado à esquerda */
     flex-direction: column; /* Adiciona isso se você quer os itens listados verticalmente */
-    align-items: flex-start;
+}
+
+.left-container button, .right-container button{
+    margin-left: auto; /* Empurra o botão para a direita */
+    background-color: white;
+    color: #333;
+    border: 1px solid white;
+    padding: 0px 10px;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    align-self: center;
+}
+
+.left-container button:hover, .right-container button:hover{
+    background-color: #eeeeee;
 }
 
 .popup {
@@ -66,4 +70,16 @@
     border: 1px solid white;
     padding: 20px;
     z-index: 100;
+}
+
+.popup button {
+    margin-left: auto; /* Empurra o botão para a direita */
+    background-color: #333;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    align-self: center;
 }

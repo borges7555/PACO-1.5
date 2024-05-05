@@ -3,7 +3,7 @@ import { useState } from 'react';
 function PropinasPagas() {
     const [showInvoice, setShowInvoice] = useState(false);
     const paidFees = [
-        { id: 1, amount: '€69.7', paymentDate: '2024-05-01' }
+        { id: 1, amount: '€69.70', paymentDate: '2024-05-01' }
     ];
 
     return (
@@ -12,8 +12,8 @@ function PropinasPagas() {
             <ul>
                 {paidFees.map(fee => (
                     <li key={fee.id}>
-                        {fee.amount}, pagas em {fee.paymentDate}
-                        <button onClick={() => setShowInvoice(true)}>Fatura</button>
+                        {fee.amount}, paga em {fee.paymentDate}
+                        <button onClick={() => setShowInvoice(true)}><b>Fatura</b></button>
                         {showInvoice && (
                             <div className="popup">
                                 Fatura detalhada aqui...

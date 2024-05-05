@@ -3,7 +3,7 @@ import { useState } from 'react';
 function PropinasNaoPagas() {
     const [showPopup, setShowPopup] = useState(false);
     const unpaidFees = [
-        { id: 1, amount: '€69.7', dueDate: '2024-10-01', entity: '23594', reference: '987654321', value: '€69.7' }
+        { id: 1, amount: '€69.70', dueDate: '2024-10-01', entity: '23594', reference: '987654321', value: '€69.7' }
     ];
 
     return (
@@ -13,7 +13,7 @@ function PropinasNaoPagas() {
                 {unpaidFees.map(fee => (
                     <li key={fee.id}>
                         {fee.amount}, até {fee.dueDate}
-                        <button onClick={() => setShowPopup(true)}>Detalhes</button>
+                        <button onClick={() => setShowPopup(true)}><b>Detalhes</b></button>
                         {showPopup && (
                             <div className="popup">
                                 Entidade: {fee.entity}, Referência: {fee.reference}, Valor: {fee.value}
