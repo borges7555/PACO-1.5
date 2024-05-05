@@ -29,6 +29,7 @@
     text-decoration: none;
     color: white;
     display: block;
+    font-size: 24px;
 }
 
 .dropdown-menu li:hover {

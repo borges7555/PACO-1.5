@@ -1,0 +1,69 @@
+/* Propinas.css */
+.title{
+    padding-top: 100px;
+    color: #333;
+    font-size: 38px;
+    box-sizing: border-box;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto; /* Mudar de 100vh para auto pode ajudar se o conteúdo estiver sendo cortado */
+    overflow: visible;
+    gap: 30px; /* Mantém o gap entre os containers */
+    padding: 0px 30px; /* Aplica padding apenas horizontalmente */
+    box-sizing: border-box;
+}
+
+.left-container, .right-container {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo verticalmente */
+    align-items: flex-start; /* Alinha o conteúdo à esquerda */
+}
+
+.left-container h2, .right-container h2{
+    justify-content: center;
+    display: flex;
+}
+
+.right-container h2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto; /* Ajusta a largura para que o centro seja calculado corretamente */
+    text-align: center; /* Centraliza o texto dentro do h2 */
+}
+
+.left-container ul, .right-container ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Adiciona isso se você quer os itens listados verticalmente */
+    align-items: flex-start;
+}
+
+.left-container ul li, .right-container ul li {
+    width: 100%; /* Ocupa toda a largura do UL */
+    text-align: left; /* Garante que o texto está alinhado à esquerda */
+    flex-direction: column; /* Adiciona isso se você quer os itens listados verticalmente */
+    align-items: flex-start;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #434343;
+    border: 1px solid white;
+    padding: 20px;
+    z-index: 100;
+}

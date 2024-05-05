@@ -12,7 +12,7 @@ function Home() {
       <div>
         <NavBar/>
         <div className='greetings'>
-          <b>Olá, @username</b>
+          <h2>Olá, @username</h2>
         </div>
         <div className="content">
           <div className="left-container">

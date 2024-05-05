@@ -19,7 +19,7 @@ function Dropdown_sec() {
                     <li><a href="/unavailable">Inscrições</a></li>
                     <li><a href="/unavailable">Calendário de Avaliações</a></li>
                     <li><a href="/unavailable">Apoio às Aulas</a></li>
-                    <li><a href="/unavailable">Pagamentos</a></li>
+                    <li><a href="/propinas">Pagamentos</a></li>
                     <li><a href="/unavailable">Requerimentos</a></li>
                     <li><a href="/unavailable">Certidões</a></li>
                     <li><a href="/unavailable">Creditações</a></li>
