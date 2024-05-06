@@ -30,9 +30,14 @@
     width: 100%;
 }
 
+.blanc {
+    color: #333;
+}
+
 .left-container h2, .right-container h2{
     justify-content: center;
     display: flex;
+    padding-bottom: 20px;
 }
 
 .left-container ul, .right-container ul{
@@ -43,6 +48,7 @@
 .left-container li, .right-container li {
     width: 100%; /* Ocupa toda a largura do UL */
     flex-direction: column; /* Adiciona isso se você quer os itens listados verticalmente */
+    padding-bottom: 30px;
 }
 
 .left-container button, .right-container button{
