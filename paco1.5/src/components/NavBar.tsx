@@ -6,8 +6,8 @@ import Dropdown_sec from './Dropdown_sec';
 function NavBar() {
 
     return (
-      <nav className="navbar">
-        <ul className="nav-links">
+      <nav className="navbar w-screen">
+        <ul className="nav-links max-w-7xl m-auto flex justify-around gap-4">
           <li><a href="/home"><b>PACO</b></a></li>
           <li><Dropdown_sec/></li>
           <li><Dropdown_hor/></li>

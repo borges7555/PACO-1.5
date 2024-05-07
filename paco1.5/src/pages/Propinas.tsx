@@ -8,8 +8,8 @@ function Propinas() {
   return (
     <div>
       <NavBar/>
-      <div className='title'>
-        <h2>Propinas</h2>
+      <div className='title' style={{fontSize: '56px'}}>
+        <h2><b>Propinas</b></h2>
       </div>
       <div className='content'>
         <div className='left-container'>

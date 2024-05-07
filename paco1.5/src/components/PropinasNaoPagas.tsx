@@ -11,7 +11,7 @@ function PropinasNaoPagas() {
 
     return (
         <div>
-            <h2>Propinas Não Pagas</h2>
+            <h2 style={{fontSize: '36px'}}><b>Propinas Não Pagas</b></h2>
             <ul>
                 {unpaidFees.map(fee => (
                     <li key={fee.id}>

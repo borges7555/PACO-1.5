@@ -13,7 +13,7 @@ function PropinasPagas() {
 
     return (
         <div>
-            <h2>Propinas Pagas</h2>
+            <h2 style={{fontSize: '36px'}}><b>Propinas Pagas</b></h2>
             <ul>
                 {paidFees.map(fee => (
                     <li key={fee.id}>
