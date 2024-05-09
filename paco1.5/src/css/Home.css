@@ -47,4 +47,43 @@
     max-width: 100%; /* Garante que a imagem não exceda o container */
     height: auto; /* Mantém a proporção da imagem */
 }
+
+.schedule-table th, .schedule-table td {
+    border: 1px solid #ddd;
+    padding: 5px; /* Reduz o padding se necessário */
+    text-align: center;
+    font-size: 14px; /* Diminui o tamanho da fonte */
+    min-width: 90px; /* Ou ajuste conforme necessário */
+  }
+  
+  .schedule-table th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 14px; /* Um pouco maior para os cabeçalhos */
+  }
+  
+  .schedule-table th {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .schedule-table td:hover {
+    background-color: #e0e0e0; /* Cor de fundo ao passar o mouse */
+  }
+
+  .schedule-table td {
+    cursor: pointer; /* Indica que o item é clicável */
+  }
+  
+  .content {
+    display: flex;
+  }
+  
+  .left-container, .right-container {
+    padding: 10px;
+  }
+  
+  .right-container {
+    overflow-x: auto; /* Adiciona rolagem horizontal se necessário */
+  }
   

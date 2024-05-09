@@ -21,7 +21,7 @@ function PropinasPagas() {
                         <button onClick={() => setShowInvoice(true)}><b>Fatura</b></button>
                         {showInvoice && (
                             <div className="popup">
-                                Fatura detalhada aqui...
+                                <img src="src/assets/fatura.png" alt="Fatura" />
                                 <button onClick={() => setShowInvoice(false)}>Fechar</button>
                             </div>
                         )}
