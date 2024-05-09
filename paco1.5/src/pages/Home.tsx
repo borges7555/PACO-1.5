@@ -116,7 +116,7 @@ function Home() {
                                                 return (
                                                     <td key={day + hour} rowSpan={event.endTime - event.startTime}
                                                         onClick={() => handleEventClick(event)}
-                                                        style={{ cursor: 'pointer', backgroundColor: '#ccc' }}>
+                                                        style={{ cursor: 'pointer', backgroundColor: '#434343' }}>
                                                         {`${event.title} ${event.location}`}
                                                     </td>
                                                 );
