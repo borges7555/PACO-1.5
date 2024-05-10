@@ -14,8 +14,6 @@ export default function Router() {
         {path: '/propinas', element: <Propinas />},
         {path: '/apoio', element: <Apoio />},
         {path: '/disciplina', element: <Disciplina />},
-
-
     ]);
 
     return <RouterProvider router={router} />;

@@ -1,9 +1,15 @@
 import { useState } from 'react';
 import '../css/Dropdown.css'
+import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
-function Dropdown_sec() {
+function Dropdown_apoio() {
+    const navigate = useNavigate();
+    const navigateToApoio = () => {
+        navigate(`/apoio`);
+      };
+
     const [isOpen, setIsOpen] = useState(false);
     const openDropdown = () => setIsOpen(true);
     const closeDropdown = () => setIsOpen(false);
@@ -11,19 +17,18 @@ function Dropdown_sec() {
     return (
         <div className="dropdown" onMouseEnter={openDropdown} onMouseLeave={closeDropdown}>
             <button className="dropdown-button">
-                Secretaria Virtual <FontAwesomeIcon icon={faChevronDown} />
+                Apoio às Aulas <FontAwesomeIcon icon={faChevronDown} />
             </button>
             {isOpen && (
                 <ul className="dropdown-menu cursor-pointer">
-                    <li><a href="/unavailable">Dados Pessoais</a></li> 
-                    <li><a href="/unavailable">Matrículas</a></li>
-                    <li><a href="/propinas">Propinas</a></li>
-                    <li><a href="/unavailable">Requerimentos</a></li>
-                    <li><a href="/unavailable">Creditações</a></li>
+                    <li><a onClick={(event: React.MouseEvent<HTMLDivElement>) => navigateToApoio(event)}>Turmas do Aluno</a></li>
+                    <li><a href="/unavailable">Plano Curricular</a></li>
+                    <li><a href="/unavailable">Inscrições</a></li>
+                    <li><a href="/unavailable">Calendário de Avaliações</a></li>
                 </ul>
             )}
         </div>
     );
 }
 
-export default Dropdown_sec;
+export default Dropdown_apoio;

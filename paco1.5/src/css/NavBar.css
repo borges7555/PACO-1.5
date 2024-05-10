@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 0px;
     position: fixed;
     top: 0;
     left: 0;
@@ -25,11 +25,11 @@
   }
   
   .nav-links li {
-    padding: 8px 24px; /* Aumentar o espaçamento horizontal */
+    padding: 8px 18px; /* Aumentar o espaçamento horizontal */
   }
   
   .nav-links li a {
     color: #fff;
     text-decoration: none;
-    font-size: 28px;
+    font-size: 24px;
   }
