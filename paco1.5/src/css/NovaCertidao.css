@@ -1,0 +1,71 @@
+.nova-certidao {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    padding: 150px 20px;
+    align-items: center;
+    height: auto; /* Mudar de 100vh para auto pode ajudar se o conteúdo estiver sendo cortado */
+}
+
+.nova-certidao div {
+    margin: 10px 0;
+    font-size: 28px;
+}
+
+.nova-certidao h1 {
+    font-size: 38px;
+    color: #333;
+}
+
+.nova-certidao select {
+    padding: 8px;
+    margin-left: 10px;
+    color: #333;
+    border: 1px solid #333;
+}
+
+.nova-certidao option:hover {
+    background-color: #434343;
+}
+
+.nova-certidao button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.nova-certidao button:hover {
+    background-color: #434343;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 60px;
+    background-color: #333;
+    border: 1px solid white;
+    z-index: 1000;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+}
+
+.popup button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid white;
+    color: #333;
+}
+
+.popup button:hover {
+    background-color: #f3f3f3;
+}

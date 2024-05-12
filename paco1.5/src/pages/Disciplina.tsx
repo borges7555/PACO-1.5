@@ -1,10 +1,6 @@
 //import React from 'react';
 import NavBar from '../components/NavBar';
 import '../css/Propinas.css'
-import { TbCircleLetterE } from "react-icons/tb";
-import { TbCircleLetterH } from "react-icons/tb";
-
-
 
 function Disciplina() {
   return (

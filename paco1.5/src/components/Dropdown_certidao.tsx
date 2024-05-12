@@ -15,9 +15,8 @@ function Dropdown_certidao() {
             </button>
             {isOpen && (
                 <ul className="dropdown-menu cursor-pointer">
-                    <li><a href="/unavailable">Nova Certidão</a></li>
-                    <li><a href="/unavailable">Listagem de Certidões</a></li>
-                    <li><a href="/unavailable">Consulta de Certidão</a></li>
+                    <li><a href="/novacertidao">Nova Certidão</a></li>
+                    <li><a href="/listagem">Listagem de Certidões</a></li>
                 </ul>
             )}
         </div>
