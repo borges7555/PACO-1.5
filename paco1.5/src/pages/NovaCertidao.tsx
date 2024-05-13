@@ -1,12 +1,9 @@
 import NavBar from '../components/NavBar';
 import { useState } from 'react';
 import '../css/NovaCertidao.css';
+import { useCertidao } from '../components/CertidaoContext';
 
 function NovaCertidao() {
-    const [cursoSelecionado, setCursoSelecionado] = useState('');
-    const [certidaoSelecionada, setCertidaoSelecionada] = useState('');
-    const [showPopup, setShowPopup] = useState(false);
-
     const cursos = [
         "Licenciatura em Engenharia de Computadores e Informática"
     ];
@@ -16,13 +13,21 @@ function NovaCertidao() {
         "Certidão de Inscrição",
         "Certidão Passe sub23"
     ];
+    
+    const [cursoSelecionado, setCursoSelecionado] = useState(cursos[0]);
+    const [certidaoSelecionada, setCertidaoSelecionada] = useState(certidoes[0]);
+    const [showPopup, setShowPopup] = useState(false);
+    const { submitCertidao } = useCertidao();
 
     const handleSubmit = () => {
-        // Ação de submissão, por exemplo:
-        console.log(`Curso: ${cursoSelecionado}, Certidão: ${certidaoSelecionada}`);
-        // Implemente a lógica de submissão aqui
-        setShowPopup(true);
-    };
+        if (!cursoSelecionado || !certidaoSelecionada) {
+            console.log("Seleção incompleta");
+        } else {
+            setShowPopup(true);
+            submitCertidao(cursoSelecionado, certidaoSelecionada, "Em Processamento");
+            console.log('Submetido:', cursoSelecionado, certidaoSelecionada);
+        }
+    };    
 
     const handleClosePopup = () => {
         setShowPopup(false); // Esconde o popup
@@ -49,7 +54,7 @@ function NovaCertidao() {
                         ))}
                     </select>
                 </div>
-                <button onClick={handleSubmit}>Submeter</button>
+                <button onClick={handleSubmit} disabled={!cursoSelecionado || !certidaoSelecionada}>Submeter</button>
                 {showPopup && (
                     <div className="popup">
                         Certidão Submetida
